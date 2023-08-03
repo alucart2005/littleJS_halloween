@@ -20,7 +20,16 @@ const navMenu = document.getElementById('nav-menu'),
     navMenu.classList.remove('show-menu')
   }
   navLink.forEach(n => n.addEventListener('click', linkAction))
+  //SWIPER
+  let homeSwiper = new Swiper(".home-swiper", {
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
 
+  })
   //Scroll reveal animation
   const sr = ScrollReveal({
     origin: 'top',
