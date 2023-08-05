@@ -76,7 +76,6 @@ function scrollActive() {
       document
         .querySelector(".nav__menu a[href*=" + sectionId + "]")
         .classList.remove("active-link");
-      console.log("sectionId " + sectionId);
     }
   });
 }
