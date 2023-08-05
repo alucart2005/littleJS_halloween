@@ -739,6 +739,19 @@ button {
   border-radius: .5rem;
 }
 
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.swiper-pagination-bullet-active {
+  width: 30px;
+  height: 10px;
+  background-color: #f4eeef;
+  border-radius: .5rem;
+}
+
 /*===============  BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px){

@@ -30,12 +30,43 @@ const navMenu = document.getElementById('nav-menu'),
       clickable: true,
     },
   })
-  let newSwiper = new Swiper(".new-swiper", {
-    centeredSlides: true,
-    slidesPerView: "auto",
+
+
+function createSwiper(selector) {
+  return new Swiper(selector, {
+    effect: 'coverflow',
     loop: true,
-    spaceBetween: 16,
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 10,
+      stretch: 0,
+      depth: 350,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
   });
+}
+
+let newSwiper = createSwiper(".new-swiper");
+let trick = createSwiper(".swiper-trick");
+
+
+
+
+
+
+
+
 
   //SCROLL up
   function scrollUp(){
