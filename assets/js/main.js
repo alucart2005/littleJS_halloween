@@ -30,12 +30,10 @@ const navMenu = document.getElementById('nav-menu'),
       clickable: true,
     },
   })
-  let newSwiper = new Swiper(".new-swiper", {
-    // centeredSlides: true,
-    // slidesPerView: "auto",
-    // loop: true,
-    // spaceBetween: 16,
 
+
+function createSwiper(selector) {
+  return new Swiper(selector, {
     effect: 'coverflow',
     loop: true,
     grabCursor: true,
@@ -50,13 +48,25 @@ const navMenu = document.getElementById('nav-menu'),
     },
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
     },
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
     },
-  
   });
+}
+
+let newSwiper = createSwiper(".new-swiper");
+let trick = createSwiper(".swiper-trick");
+
+
+
+
+
+
+
+
 
   //SCROLL up
   function scrollUp(){
