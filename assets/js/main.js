@@ -31,10 +31,31 @@ const navMenu = document.getElementById('nav-menu'),
     },
   })
   let newSwiper = new Swiper(".new-swiper", {
-    centeredSlides: true,
-    slidesPerView: "auto",
+    // centeredSlides: true,
+    // slidesPerView: "auto",
+    // loop: true,
+    // spaceBetween: 16,
+
+    effect: 'coverflow',
     loop: true,
-    spaceBetween: 16,
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 10,
+      stretch: 0,
+      depth: 350,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  
   });
 
   //SCROLL up
