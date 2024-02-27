@@ -7,7 +7,7 @@ My first steps in JavaScript 😊
 
 -	[https://www.linkedin.com/in/napoleon-anaya/](https://www.linkedin.com/in/napoleon-anaya/)
 
-## Preview 
+## Preview -	[https://www.halloween.com](https://halloween-r.netlify.app/)
 
 ![..](https://github.com/alucart2005/littleJS_halloween/blob/main/assets/img/preview.jpg?raw=true)
 
